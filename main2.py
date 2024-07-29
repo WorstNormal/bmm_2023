@@ -42,6 +42,7 @@ def clear_directory(directory: str) -> None:
 	for f in os.listdir(directory):
 		os.remove(os.path.join(directory, f))
 
+
 def clear_directory_except(directory: str, *exceptions: str) -> None:
 	for f in os.listdir(directory):
 		if os.path.join(directory, f) in exceptions:
